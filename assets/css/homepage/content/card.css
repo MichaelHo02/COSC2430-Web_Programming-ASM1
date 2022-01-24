@@ -16,11 +16,22 @@
 .card__body {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .card__content {
     padding: 10px;
+}
+
+.card__store {
+    padding: 15px;
+    background-color: var(--primary-color);
+    border-radius: 0 0 10px 10px;
+}
+
+.card__store-name {
+    text-align: center;
+    color: white;
 }
 
 
@@ -49,13 +60,18 @@
 .product-card__price {
 }
 
-.product-card__store {
-    padding: 15px;
-    background-color: var(--primary-color);
-    border-radius: 0 0 10px 10px;
+/* store class */
+.store-card {
+    height: 96;
+    width: 180px;
 }
 
-.product-card__store-name {
+.store-card__img-container {
     text-align: center;
-    color: white;
+    padding: 5px;
+}
+
+.store-card__img {
+    width: 40px;
+    border-radius: 50%;
 }
