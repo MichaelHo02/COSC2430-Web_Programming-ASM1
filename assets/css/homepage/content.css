@@ -1,5 +1,5 @@
 .content {
-
+    padding: 60px;
 }
 
 .new-stores {
@@ -15,5 +15,48 @@
 }
 
 .featured-products {
-    
+
 }
+
+/* new product class */
+.product-card {
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    text-align: right;
+}
+.product-card__img-container {
+    background-color: lightblue;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-card__img {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-card__content {
+    padding: 10px;
+}
+
+.product-card__name {
+    font-size: 1.8rem;
+}
+
+.product-card__price {
+    font-size: 1.4rem;
+}
+
+.product-card__store {
+    padding: 10px;
+}
+
+.product-card__store-name {
+    font-size: 1.6rem;
+}
+
