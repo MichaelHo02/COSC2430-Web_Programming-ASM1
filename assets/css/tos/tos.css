@@ -1,0 +1,19 @@
+.go-back {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.go-back__button {
+    outline: none;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.go-back__button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

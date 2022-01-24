@@ -45,3 +45,18 @@
 
 }
 
+.content__wrapper {
+    background-color: #fff;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.content__body {
+    padding: 20px;
+}
+
+.content__paragraph {
+    font-size: 1.6rem;
+    padding: 0 20px;
+}
