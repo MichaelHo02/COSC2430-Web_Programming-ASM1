@@ -5,6 +5,7 @@
     border-radius: 10px;
     margin: 5px;
     text-align: center;
+    scroll-snap-align: start ;
 }
 
 .card__img {
@@ -17,9 +18,6 @@
 }
 
 .card__body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     text-align: right;
 }
 
@@ -44,6 +42,8 @@
 .card__store-name {
     text-align: center;
     color: white;
+    width: inherit;
+    white-space: nowrap;
 }
 
 

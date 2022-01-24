@@ -4,11 +4,17 @@
 
 .content__section {
     display: flex;
-    flex-wrap: wrap;
     margin: -5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 10px;
+
+    overflow-x: auto;
+    scroll-snap-type: x;
+}
+
+.content__section::-webkit-scrollbar {
+    display: none;
 }
 
 .content__title {
