@@ -15,6 +15,19 @@
     padding: 20px;
 }
 
+.content__title-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.content__title-link:hover {
+    opacity: 0.6;
+}
+
+.content__title-link:active {
+    text-decoration: none;
+}
+
 .new-stores {
 
 }
