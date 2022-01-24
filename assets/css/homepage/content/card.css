@@ -5,7 +5,8 @@
     border-radius: 10px;
     margin: 5px;
     text-align: center;
-    scroll-snap-align: start ;
+    scroll-snap-align: center;
+    box-sizing: content-box;
 }
 
 .card__img {
@@ -42,7 +43,6 @@
 .card__store-name {
     text-align: center;
     color: white;
-    width: inherit;
     white-space: nowrap;
 }
 
@@ -50,6 +50,7 @@
 /* product class */
 .product-card {
     width: 180px;
+    min-width: 180px;
     height: 300px;
 }
 
@@ -59,6 +60,7 @@
 
 .product-card__img {
     height: 200px;
+    width: 100%;
 }
 
 .product-card__body {
@@ -87,6 +89,7 @@
 .store-card {
     height: 96;
     width: 180px;
+    min-width: 180px;
 }
 
 .store-card__img-container {
