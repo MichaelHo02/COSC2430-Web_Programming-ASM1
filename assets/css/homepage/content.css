@@ -28,8 +28,9 @@
     border-radius: 10px;
     text-align: right;
 }
+
 .product-card__img-container {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     border-radius: 10px 10px 0 0;
 }
 
@@ -38,6 +39,13 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.product-card__body {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .product-card__content {
@@ -49,14 +57,17 @@
 }
 
 .product-card__price {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .product-card__store {
     padding: 10px;
+    background-color: lightblue;
+    border-radius: 0 0 10px 10px;
 }
 
 .product-card__store-name {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    text-align: center;
 }
 
