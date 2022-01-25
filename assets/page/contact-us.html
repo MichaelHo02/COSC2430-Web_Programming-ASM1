@@ -148,30 +148,27 @@
 
                 <div class="form__section">
                     <input class="form__input input-focus" autocomplete="off" type="text" id="name"
-                        placeholder="Enter your name" maxlength="50" />
+                        placeholder="Enter your name" maxlength="50" required />
                 </div>
 
 
                 <div class="text-field form__section">
                     <input class="form__input input-focus" autocomplete="off" type="email" id="email"
-                        placeholder="Enter your email" maxlength="50">
+                        placeholder="Enter your email" maxlength="50" required>
                 </div>
 
                 <div class="text-field form__section">
                     <input class="form__input input-focus" autocomplete="off" type="tel" id="phone"
-                        placeholder="Enter your phone number" maxlength="50">
+                        placeholder="Enter your phone number" maxlength="50" required>
                 </div>
 
                 <h4 class="form__section">Preferred contact method:</h4>
-                <input type="radio" id="radio-email" class="radio-input" name="contact-method" />
+                <input type="radio" id="radio-email" class="radio-input" name="contact-method"/>
                 <label for="radio-email" class="radio-label"></label>
                 <label for="radio-email" class="form__input">Email</label>
                 <input type="radio" id="radio-phone" class="radio-input" name="contact-method" />
                 <label for="radio-phone" class="radio-label"></label>
                 <label for="radio-phone" class="form__input">Phone</label>
-
-
-
 
                 <h4 class="form__section">Contact day(s):</h4>
                 <input type="checkbox" name="contact-day[]" id="monday" class="checkbox-input" />
