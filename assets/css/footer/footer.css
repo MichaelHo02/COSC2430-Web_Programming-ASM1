@@ -79,6 +79,28 @@
     text-align: center;
 }
 
-.footer-row li a:hover {
+
+/* .footer-row li a:hover {
     color: lightblue;
+} */
+
+.footer-dropdown-content {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.footer-dropdown-header:hover .footer-dropdown-content {
+    display: block;
+}
+
+.footer-dropdown-content a {
+    display: block;
+}
+
+.footer-dropdown-content a {
+    margin-top: 3px;
+    margin-left: 5px;
+    font-size: 1.5rem;
+    font-weight: 200;
 }
