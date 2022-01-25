@@ -1,0 +1,249 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Term of Service</title>
+
+    <!-- external sources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/footer/footer.css">
+    <link rel="stylesheet" href="../css/navbar/navbar.css">
+
+    <link rel="stylesheet" href="../css/content/content.css">
+    <link rel="stylesheet" href="../css/tos/tos.css">
+
+    <style>
+        .form__section {
+            margin: 20px 0;
+        }
+
+        .text-area {
+            width: 100% !important;
+            resize: none;
+        }
+
+        */ input,
+        button,
+        textarea {
+            border: 0;
+            outline: none;
+        }
+
+        /* Main code */
+
+        .input-focus {
+            padding: 1rem;
+            width: 40%;
+            display: block;
+            border: 1px solid #b5bfc9;
+            border-radius: 6px;
+            color: #0d1f36;
+            font-size: 1.4rem;
+            outline: none;
+            background-color: white;
+            transition: all 0.2s ease;
+            /* margin-bottom: 10px; */
+        }
+
+        .input-focus::-webkit-input-placeholder {
+            color: #8d97a9;
+        }
+
+        .input-focus::-moz-input-placeholder {
+            color: #8d97a9;
+        }
+
+        .input-focus:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 4px rgba(var(--primary-color-rgb), 0.5);
+        }
+
+        /* Main code */
+
+        .radio-input {
+            display: none;
+        }
+
+        .radio-label {
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 1.6rem;
+            background-color: #eee;
+            display: inline-block;
+            cursor: pointer;
+            margin: 0 1rem;
+            box-shadow: 0 0 0 4px #eee;
+            transition: all 0.25s linear;
+        }
+
+        .radio-input:checked+.radio-label {
+            box-shadow: 0 0 0 4px #fff, 0 0 0 6px var(--primary-color);
+            background-color: var(--primary-color);
+        }
+
+        .checkbox-input {
+            display: none;
+        }
+
+        .checkbox-label {
+            width: 1.6rem;
+            height: 1.6rem;
+            border-radius: 0.2px;
+            background-color: #eee;
+            display: inline-block;
+            cursor: pointer;
+            margin: 0 1rem;
+            box-shadow: 0 0 0 4px #eee;
+            transition: all 0.25s linear;
+        }
+
+        .checkbox-input:checked+.checkbox-label {
+            box-shadow: 0 0 0 4px #fff, 0 0 0 6px var(--primary-color);
+            background-color: var(--primary-color);
+        }
+
+        select {
+            width: 20% !important;
+        }
+
+        select:invalid {
+            color: #8d97a9;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Nav -->
+    <div class="navbar">
+        <div class="navbar-img-container">
+            <img src="/assets/img/navbar/bno_2.png" alt="" class="navbar-img-logo" />
+        </div>
+        <ul class="navbar-list">
+            <li><a href="../../index.html" class="navbar-item">Home</a></li>
+            <li><a href="./assets/page/about_us.html" class="navbar-item">About us</a></li>
+            <li><a href="/assets/page/fees.html" class="navbar-item">Fees</a></li>
+            <li><a href="#" class="navbar-item">My Account</a></li>
+            <li><a href="#" class="navbar-item">Browse</a></li>
+            <li><a href="#" class="navbar-item">FAQs</a></li>
+        </ul>
+        <a href="" class="contact"><button class="navbar-btn">Contact</button></a>
+    </div>
+
+    <section class="content">
+        <h1 class="content__title">CONTACT US</h1>
+        <div class="content__wrapper">
+            <form class="content__body form">
+                <select name="contact-purpose" id="contact-purpose" class="form__input input-focus" required>
+                    <option value="" disabled selected>Contact purpose</option>
+                    <option value="buisness">Buisness</option>
+                    <option value="personal">Personal</option>
+                </select>
+
+                <div class="form__section">
+                    <input class="form__input input-focus" autocomplete="off" type="text" id="name"
+                        placeholder="Enter your name" maxlength="50" />
+                </div>
+
+
+                <div class="text-field form__section">
+                    <input class="form__input input-focus" autocomplete="off" type="email" id="email"
+                        placeholder="Enter your email" maxlength="50">
+                </div>
+
+                <div class="text-field form__section">
+                    <input class="form__input input-focus" autocomplete="off" type="tel" id="phone"
+                        placeholder="Enter your phone number" maxlength="50">
+                </div>
+
+                <h4 class="form__section">Preferred contact method:</h4>
+                <input type="radio" id="radio-email" class="radio-input" name="contact-method" />
+                <label for="radio-email" class="radio-label"></label>
+                <label for="radio-email" class="form__input">Email</label>
+                <input type="radio" id="radio-phone" class="radio-input" name="contact-method" />
+                <label for="radio-phone" class="radio-label"></label>
+                <label for="radio-phone" class="form__input">Phone</label>
+
+
+
+
+                <h4 class="form__section">Contact day(s):</h4>
+                <input type="checkbox" name="contact-day[]" id="monday" class="checkbox-input" />
+                <label for="monday" class="checkbox-label"></label>
+                <label for="monday">Monday</label>
+                <input type="checkbox" name="contact-day[]" id="tuesday" class="checkbox-input" />
+                <label for="tuesday" class="checkbox-label"></label>
+                <label for="tuesday">Tuesday</label>
+                <input type="checkbox" name="contact-day[]" id="wednesday" class="checkbox-input" />
+                <label for="wednesday" class="checkbox-label"></label>
+                <label for="wednesday">Wednesday</label>
+                <input type="checkbox" name="contact-day[]" id="thursday" class="checkbox-input" />
+                <label for="thursday" class="checkbox-label"></label>
+                <label for="thursday">Thursday</label>
+                <input type="checkbox" name="contact-day[]" id="friday" class="checkbox-input" />
+                <label for="friday" class="checkbox-label"></label>
+                <label for="friday">Friday</label>
+                <input type="checkbox" name="contact-day[]" id="saturday" class="checkbox-input" />
+                <label for="saturday" class="checkbox-label"></label>
+                <label for="saturday">Saturday</label>
+                <input type="checkbox" name="contact-day[]" id="sunday" class="checkbox-input" />
+                <label for="sunday" class="checkbox-label"></label>
+                <label for="sunday">Sunday</label>
+
+                <h4 class="form__section">Message:</h4>
+                <textarea class="input-focus text-area" name="message" id="message" rows="5"
+                    placeholder="Please enter your message"></textarea>
+
+                <div class="go-back">
+                    <input type="reset" name="" value="Reset the Form" class="go-back__button">
+                    <input type="submit" name="send" id="Send" class="go-back__button">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer
+        class="footer-background bg-pos-center-top bg-size-cover bg-norepeat d-flex align-item-end jus-content-center white-text">
+        <div class="footer-container d-flex jus-content-center flex-dir-column">
+            <div class="footer-row d-flex flex-dir-row">
+                <div class="col-3"></div>
+                <div class="col-3">
+                    <h4 class="footer-header">MAIN PAGES</h4>
+                    <ul class="d-flex flex-dir-column font-size-3">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h4 class="footer-header">POLICY</h4>
+                    <ul class="d-flex flex-dir-column font-size-3">
+                        <li><a href="./assets/page/term-of-service.html">Term of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Copyright</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h4 class="footer-header">BROWSE</h4>
+                    <ul class="d-flex flex-dir-column font-size-3">
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Stores</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-row">
+                <p class="text-center font-size-3">Copyright @ 2022</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
