@@ -32,7 +32,7 @@
     transition: transform 0.8s;
 }
 
-.content__visual-img:hover {
+.content__visual:hover .content__visual-img{
     transform: rotateY(180deg);
 }
 
