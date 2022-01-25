@@ -57,6 +57,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-backface-visibility: hidden;
 }
 
 .fee-card-back p {
@@ -66,6 +67,10 @@
 
 .fee-card-wrapper:hover {
     transform: scale(1.05);
+    transform: rotateY(180deg);
+}
+
+.fee-card-container:hover .fee-card-wrapper {
     transform: rotateY(180deg);
 }
 
